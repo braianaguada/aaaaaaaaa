@@ -1,0 +1,22 @@
+{
+  "name": "@rpg/client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo 'No lint configured for @rpg/client'"
+  },
+  "dependencies": {
+    "colyseus.js": "^0.16.12",
+    "phaser": "^3.90.0",
+    "@rpg/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.2.2"
+  }
+}
