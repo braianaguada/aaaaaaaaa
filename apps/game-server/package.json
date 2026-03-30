@@ -1,0 +1,25 @@
+{
+  "name": "@rpg/game-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo 'No lint configured for @rpg/game-server'"
+  },
+  "dependencies": {
+    "@colyseus/core": "^0.16.14",
+    "@colyseus/schema": "^3.0.35",
+    "@colyseus/ws-transport": "^0.16.8",
+    "express": "^4.21.2",
+    "@rpg/config": "workspace:*",
+    "@rpg/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
